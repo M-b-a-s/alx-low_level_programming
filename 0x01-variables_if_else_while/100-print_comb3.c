@@ -17,6 +17,7 @@ int main(void)
 			putchar('0' + first_digit);
 			putchar('0' + second_digit);
 
+			putchar(',');
 			putchar(' ');
 
 			second_digit++;
