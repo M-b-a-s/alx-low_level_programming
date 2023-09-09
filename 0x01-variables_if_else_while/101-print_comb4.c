@@ -8,7 +8,7 @@ int main(void)
 {
 	int first_digit = 0, second_digit, third_digit;
 
-	while (first_digit <= 7)
+	while (first_digit <=7)
 	{
 		second_digit = first_digit + 1;
 
