@@ -20,11 +20,11 @@ int main(void)
 		else if (a % 3 == 0)
 			print("Fizz");
 		else if (a % 5 == 0)
-			print("Buzz");
+			printf("Buzz");
 		else
 			printf("%d", a);
 		if (a < 100)
-			print(" ");
+			printf(" ");
 	}
 	printf("\n");
 	return (0);
