@@ -8,7 +8,7 @@
 int main(void)
 {
 	char password[84];
-	int i = 0, sum = 0, half1, half2;
+	int i = 0, sum = 0;
 
 	srand(time(0));
 
@@ -20,26 +20,15 @@ int main(void)
 
 	password[i] = '\0';
 
-	if (sum != 2772)
-	{
-		half1 = (sum - 2772) / 2;
-		half2 = (sum - 2772) / 2;
-		if ((sum - 2772) % 2 != 0)
-			half1++;
+	int diff = sum - 2772;
 
-		for (i = 0; password[i]; i++)
+	if (diff != 0)
+	{
+		for (i = 0; password[i] && diff > 0; i++)
 		{
-			if (password[i] >= (33 + half1))
+			if (password[i] >= (33 + diff))
 			{
-				password[i] -= half1;
-				break;
-			}
-		}
-		for (i = 0; password[i]; i++)
-		{
-			if (password[i] >= (33 + half2))
-			{
-				password[i] -= half2;
+				password[i] -= diff;
 				break;
 			}
 		}
