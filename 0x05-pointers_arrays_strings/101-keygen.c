@@ -9,6 +9,7 @@ int main(void)
 {
 	char password[84];
 	int i = 0, sum = 0;
+	int diff = sum - 2772;
 
 	srand(time(0));
 
@@ -20,7 +21,7 @@ int main(void)
 
 	password[i] = '\0';
 
-	int diff = sum - 2772;
+	// int diff = sum - 2772;
 
 	if (diff != 0)
 	{
