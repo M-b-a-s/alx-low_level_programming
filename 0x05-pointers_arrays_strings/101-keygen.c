@@ -21,8 +21,6 @@ int main(void)
 
 	password[i] = '\0';
 
-	// int diff = sum - 2772;
-
 	if (diff != 0)
 	{
 		for (i = 0; password[i] && diff > 0; i++)
