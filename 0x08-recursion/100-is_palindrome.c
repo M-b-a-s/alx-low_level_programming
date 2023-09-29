@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _strnlen_recursion - prints the length of a string
+ * _strlen_recursion - prints the length of a string
  * @s: string
  * Return: length of string
  */
@@ -28,11 +28,11 @@ int verify(char *s, int i, int j)
 		return (0);
 }
 /**
- * is_palindrome - returns 1ifa string is a palindrome and 0 if not
+ * is_palindrome - returns 1 if a string is a palindrome and 0 if not
  * @s: string
  * Return: 0
  */
 int is_palindrome(char *s)
 {
-	return (verify(s 0, _strnlen_recursion(s) - 1));
+	return (verify(s 0, _strlen_recursion(s) - 1));
 }
