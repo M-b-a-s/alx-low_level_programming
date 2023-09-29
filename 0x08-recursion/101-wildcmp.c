@@ -28,4 +28,4 @@ int verify(char *s1, char *s2, int i, int j)
 int wildcmp(char *s1, char *s2)
 {
 	return (verify(s1, s2, 0, 0));
-
+}
