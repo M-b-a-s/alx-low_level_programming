@@ -1,9 +1,9 @@
 #include <stdio.h>
 /**
- * main - prints name, followed by a new line
+ * main - prints its name, followed by a new line
  * @argc: argument count
  * @argv: argument array
- * Return 0.
+ * Return: 0.
  */
 int main(int argc, char **argv)
 {
